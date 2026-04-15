@@ -1,3 +1,4 @@
+#https://yemeksistemi-production.up.railway.app/
 # KYK Yemek Portalı
 
 Bu proje, KYK yurtlarındaki günlük yemek menülerini şehir ve tarih bazlı olarak listeleyen, aynı zamanda bir yönetim paneli üzerinden veri girişine imkan tanıyan web tabanlı bir portal uygulamasıdır.
