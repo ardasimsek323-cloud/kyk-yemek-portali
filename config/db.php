@@ -1,8 +1,8 @@
 <?php
-$host = '127.0.0.1'; // Docker değil, yerel MySQL için
+$host = '127.0.0.1'; 
 $dbname = 'kyk_yemek_db';
 $username = 'root';
-$password = '123'; // Eğer şifren yoksa burayı '' yap
+$password = '123'; 
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
