@@ -3,9 +3,9 @@ require_once 'config/db.php';
 include 'includes/header.php';
 
 $secilenTarih = $_GET['tarih'] ?? date('Y-m-d');
-$secilenSehir = $_GET['sehir'] ?? 'Izmir'; // Varsayılan Şehir
+$secilenSehir = $_GET['sehir'] ?? 'Izmir'; 
 
-// Veritabanından Şehre ve Tarihe göre çek
+
 $sorgu = $db->prepare("SELECT * FROM yemekler WHERE tarih = ? AND sehir = ? ORDER BY id ASC");
 $sorgu->execute([$secilenTarih, $secilenSehir]);
 $tumYemekler = $sorgu->fetchAll(PDO::FETCH_ASSOC);
