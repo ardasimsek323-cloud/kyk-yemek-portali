@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         $db->beginTransaction();
-        // SADECE seçilen şehirdeki veriyi sil ve güncelle
+        
         $sil = $db->prepare("DELETE FROM yemekler WHERE tarih = ? AND ogun_turu = ? AND sehir = ?");
         $sil->execute([$tarih, $ogun, $sehir]);
 
